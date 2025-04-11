@@ -9,6 +9,10 @@ mon_IO - historico de latencia de IO
 1. instalar chave SSH privada
 Fonte: chimarea2 em ~/.ssh/jpsp_github_20250411
 
+não esquecer:
+$ chmod 600  ~/.ssh/jpsp_github_20250411
+
+
 2. configurar acesso github
 $ cat ~/.ssh/config 
 Host github.com
@@ -20,7 +24,9 @@ Host github.com
 (nota: em Host em vez de "github.com" pode ser "github.com-mon_IO")
 
 3. puxar projeto
+$ cd ~/tmp
 $ git clone git@github.com:jpsp1/mon_IO.git
+$ cd mon_IO/
 $ git config user.email "joao.pagaime@gmail.com"
 
 4. mover projeto 
