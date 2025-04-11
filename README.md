@@ -17,7 +17,7 @@ Host github.com
 
 3. puxar projeto
 $ git clone git@github.com:jpsp1/mon_IO.git
-
+$ git config user.email "joao.pagaime@gmail.com"
 4. mover projeto 
 # mv  mon_IO /usr/local/
 
