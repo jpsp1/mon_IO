@@ -30,3 +30,7 @@ $ sudo  mv  mon_IO /usr/local/
 $ crontab -l
 .....
 */5 * * * * /usr/local/mon_IO/latencia_io.sh 2>&1 > /usr/local/mon_IO/latencia_io.log
+
+6.  adicionar ao repositório GIT o ficheiro de dados do cliente especifico. Exemplo:
+$ git add latencia_io.data.historico.chimaera2-serv
+
