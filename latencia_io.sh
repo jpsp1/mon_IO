@@ -16,6 +16,6 @@ sleep $((RANDOM % 10 + 1))
 #Normally, git pull = git fetch + git merge.
 git pull --rebase
 d=`date`
-git commit -m "__ $HN __ updates a $d" -a
+git commit -m "$HN:updates a $d" -a
 git push -u origin main
 
