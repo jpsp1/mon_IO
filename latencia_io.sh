@@ -11,6 +11,7 @@ if [ $(stat -c%s "$LH") -gt $((1 * 1024 * 1024)) ]; then
     mv $LH $LH.old
 fi
 #------------------- upload
+sleep $((RANDOM % 10 + 1))
 #Normally, git pull = git fetch + git merge.
 git pull --rebase
 d=`date`
