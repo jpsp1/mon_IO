@@ -11,6 +11,7 @@ if [ $(stat -c%s "$LH") -gt $((1 * 1024 * 1024)) ]; then
     mv $LH $LH.old
 fi
 #------------------- upload
+git pull
 d=`date`
 git commit -m "updates a $d" -a
 git push -u origin main

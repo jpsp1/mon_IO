@@ -28,6 +28,8 @@ $ cd ~/tmp
 $ git clone git@github.com:jpsp1/mon_IO.git
 $ cd mon_IO/
 $ git config user.email "joao.pagaime@gmail.com"
+$ git config pull.rebase false  # merge (the default strategy)
+
 
 4. mover projeto 
 $ sudo  mv  mon_IO /usr/local/
