@@ -11,7 +11,8 @@ if [ $(stat -c%s "$LH") -gt $((1 * 1024 * 1024)) ]; then
     mv $LH $LH.old
 fi
 #------------------- upload
-git pull
+#Normally, git pull = git fetch + git merge.
+git pull --rebase
 d=`date`
 git commit -m "updates a $d" -a
 git push -u origin main
