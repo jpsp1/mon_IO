@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /usr/local/mon_IO
 L=latencia_io.data.`hostname`
 if [ $(stat -c%s "$L") -gt $((10 * 1024 * 1024)) ]; then
     mv $L $L.old
