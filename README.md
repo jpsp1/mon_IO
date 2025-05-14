@@ -1,8 +1,5 @@
 mon_IO - historico de latencia de IO
 
-------------------- Introdução
-- todos os clientes tem acesso de escrita para o github
-- uma vez por dia faz-se a recolha dos ficheiros de dados a partir do github
 
 ------------------- Instalação
 
