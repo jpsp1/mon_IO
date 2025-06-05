@@ -41,7 +41,7 @@ printf "
 #        0  1  2  3
 printf "%s;%s;%s;%s\n" "$d" $d2 $R $W  >> $L2
 
-printf "%s;%s;%s;%s;%s;%s;%s\n" "$d" $avgg $avgg_u $mdevv $mdevv_u $delta_R_PS $delta_W_PS >> $LH
+printf "%s;%s;%s;%s;%s;%s;sect_R_sec;%s;sect_W_sec\n" "$d" $avgg $avgg_u $mdevv $mdevv_u $delta_R_PS $delta_W_PS >> $LH
 
 if [ $(stat -c%s "$LH") -gt $((1 * 1024 * 1024)) ]; then
     mv $LH $LH.old
