@@ -12,6 +12,8 @@ L2=${LH}.carga
 #Field 10 - sectors written
 R=`cat  /proc/diskstats | awk '{print $6}'|awk '{sum += $1} END {print sum}'`
 W=`cat  /proc/diskstats | awk '{print $10}'|awk '{sum += $1} END {print sum}'`
+R=`printf "%.0f\n" $R`
+W=`printf "%.0f\n" $W`
 IFS=';' read -r -a fruits <<< `tail -1 $L2`  
 d=$(date +"%Y-%m-%d %H:%M")
 d2=$(date +"%s")
