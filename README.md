@@ -1,7 +1,7 @@
 mon_IO - historico de latencia de IO
 
 
-------------------- Instalação
+------------------- Instalação e uso
 
 1. instalar chave SSH privada
 Fonte: chimarea2 em ~/.ssh/jpsp_github_20250411
@@ -38,4 +38,12 @@ $ crontab -l
 
 6.  adicionar ao repositório GIT o ficheiro de dados do cliente especifico. Exemplo:
 $ git add latencia_io.data.historico.chimaera2-serv
+
+7. Atualizar
+Convenção: master é o chimarae
+upload / sync: git_upload.sh
+
+8. remover ficheiros do projeto sem apagar
+$ git ls-files
+$ git rm --cached <file> 
 

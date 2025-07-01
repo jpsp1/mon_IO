@@ -26,6 +26,12 @@ if [[ -n "$secs" && "$secs" != "0" ]]; then
     delta_R_PS=$[ $delta_R / $secs ]
     delta_W_PS=$[ $delta_W / $secs ]
 fi
+if [  "$delta_R_PS" -lt -1  ]; then
+    delta_R_PS=-2
+fi
+if [  "$delta_W_PS" -lt -1  ]; then
+    delta_W_PS=-2
+fi
 printf "
    R=%s
    R_last=%s 
